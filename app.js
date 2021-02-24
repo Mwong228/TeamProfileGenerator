@@ -43,10 +43,10 @@ async function main() {
                     {
                         type: 'input',
                         message: 'Enter Manager Office Number',
-                        name: 'office'
+                        name: 'officeNumber'
                     }
                 ])
-            const manager = new Manager(addManager.name, employeeId++, addManager.email, addManager.office)
+            const manager = new Manager(addManager.name, employeeId++, addManager.email, addManager.officeNumber)
             employeeList.push(manager)
         }
         else if (list.choice === 'Engineer') {
